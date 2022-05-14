@@ -113,6 +113,7 @@ const config = {
 
 gulp.task("build", build);
 gulp.task("default", build);
+gulp.task("lint", runEslint);
 
 gulp.task("release", async () => {
     await build();
